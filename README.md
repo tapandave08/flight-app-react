@@ -1,2 +1,4 @@
-# flight-app-react
-Demo for flight-app
+# Welcome To Flight App
+
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+
