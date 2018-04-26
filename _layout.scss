@@ -1,0 +1,85 @@
+@import "../helper/_variables.scss";
+
+.App {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	.App-header {
+		height: 52px;
+		background-color: $bg-header;
+		padding: 20px 30px;
+		color: white;
+		h1 {
+			font-size: 21px;
+			float: left;
+		}
+		img {
+			height: 52px;
+			float: left;
+			padding-right: 15px;
+		}
+	}
+	.App-body {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+	}
+	.App-content {
+		flex: 1;
+		padding: 10px;
+		background:$bg-content;
+	}
+
+	.App-nav {
+		flex: 0 0 15em;
+		background-color: $bg-aside;
+		order: -1;
+	}
+
+	@media (min-width: 768px) {
+		.App-body {
+			flex-direction: row;
+			flex: 1;
+		}
+		.App-content {
+			flex: 1;
+			padding: 20px;
+		}
+		.App-nav {
+			flex: 0 0 15em;
+			padding: 20px;
+		}
+	}
+}
+
+ul {
+	list-style: none;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+	flex-direction: column;
+	li {
+		padding: 10px;
+		display: flex;
+		flex: 1;
+		@media (min-width: 768px) {
+			&:first-child {
+				padding-top: 0px;
+			}
+		}
+	}
+}
+
+.calendar {
+	& > div{
+		display: flex;
+	width: 100%;
+	}
+	.react-datepicker-wrapper {
+		width: 100%;
+		.react-datepicker__input-container {
+			width: 100%;
+		}
+	}
+}
